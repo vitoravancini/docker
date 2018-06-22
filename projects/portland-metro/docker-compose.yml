@@ -15,7 +15,7 @@ services:
     restart: always
     ports: [ "8080:8080" ]
   schema:
-    image: pelias/schema:portland-synonyms
+    image: pelias/schema:disable_fielddata
     container_name: pelias_schema
     volumes:
       - "./pelias.json:/code/pelias.json"
